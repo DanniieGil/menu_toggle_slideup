@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+  font-family: sans-serif;
+  background-image: url(https://i.pinimg.com/originals/75/83/60/75836028df1cf7cb193c64a10f33b9bc.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+.header-menu.toggle {
+  cursor: pointer;
+  width: 10vw;
+}
+
+.header-menu-text {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 2.5rem;
+  right: 4rem;
+}
+
+.header-nav-icon,
+.header-menu-icon {
+  position: absolute;
+  color: white;
+  top: 2rem;
+  right: 2rem;
+  padding-left: 1.5rem;
+  font-size: 1.8rem;
+  transition: all 0.5 ease-in-out 0s;
+}
+
+.header-nav {
+  display: block;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  right: 0;
+  width: 25vw;
+  height: 100vh;
+  background-color: #33c391;
+  z-index: 10000;
+  box-shadow: 1px 1px 20px 5px black;
+}
+
+.header-nav-content {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  color: inherit;
+  margin: 2rem;
+  
+}
+
+.header-nav-links {
+  margin-top: 5rem;
+  text-align: none;
+  list-style: none;
+  padding: 5px;
+  line-height: 100px;
+}
+
+#nav-link a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+#nav-link a:hover, #nav-link a:active {
+  background-color: white;
+  border-radius: 50px;
+  color: #33c391;
+  box-shadow: 1px 1px 8px 1px rgb(10, 3, 44);
+}
+
+.header-nav-social i {
+  margin-left: 3rem;
+  padding: 15px;
+  font-size: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+
+.header-nav-social i:hover, .header-nav-social i:active {
+  border: 3px solid white;
+  transform: scale(1.1);
+  color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Responsive Web Mobile */
+/* @media (max-width: 768px) {
+    
+    #nav{
+   width: max-content
+    }
+    
+    #nav-link {
+        font-size: 20px ;
+        text-align: center;
+    }
+
+
+} */
